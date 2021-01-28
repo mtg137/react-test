@@ -1,0 +1,146 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+  }
+
+.mobile-only {
+  display: none !important;
+}
+
+.header {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.header .movieSearch {
+  padding: 5px;
+  display: inline-block;
+  position: relative;
+}
+
+.header .movieSearch .dbMovies {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 20;
+  border: 1px solid rgb(158, 173, 185);
+}
+
+.dbMovies .movie {
+  background-color: white;
+}
+
+.header .movieSearch .dbMovies .movie:not(:last-child) {
+  border-bottom: 1px solid rgb(158, 173, 185);
+}
+
+.header .remoteMovie .movieSearch i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.header .remoteMovie .movieSearch input {
+  height: 25px;
+  padding-left: 24px;
+}
+
+.header .remoteMovie button {
+  margin-left: 20px;
+  padding: 5px;
+  background-color: rgb(101,91,241);
+  color: white;
+  border: none;
+}
+
+.header .loadedMovie {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .loadedMovie .movieTypes .movieType {
+  background: none;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
+.header .loadedMovie .movieTypes .movieType.selected {
+  border-bottom: 2px solid rgb(101,91, 240);
+  color: rgb(101,91, 240);
+}
+
+input, button {
+  font-size: 20px;
+}
+
+.movies {
+  text-align: left;
+  padding: 20px 0px;
+}
+
+.movies .movie:first-child {
+  border-top: 1px solid rgb(158, 173, 185);
+}
+.movies .movie {
+  border-bottom: 1px solid rgb(158, 173, 185);
+  padding: 5px;
+  font-size: 25px;
+}
+
+.movies .movie .status {
+  color: rgb(101, 91, 240);
+  margin: 0px 10px;
+}
+
+.movie .content {
+  padding: 10px 25px;
+  display: flex;
+  position: relative;
+}
+
+.movie .content .movie-image {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(img/default-img.png);
+}
+.movie .content .movie-data {
+  font-size: 15px;
+  margin-left: 20px;
+}
+.movie .content .movie-status {
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+}
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    width: 100%;
+  }  
+
+  .mobile-hidden {
+    display: none !important;
+  }
+  .mobile-only {
+    display: inline !important;
+  }
+
+  .header .remoteMovie .movieSearch {
+    display: inline;
+  }
+}

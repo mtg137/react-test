@@ -1,0 +1,17 @@
+let movies = [
+    {
+      id: 1,
+      title: 'abc',
+      watched: false,
+    },
+    {
+      id: 2,
+      title: 'def',
+      watched: true,
+    },
+    {
+      id: 3,
+      title: 'ghi',
+      watched: true,
+    }
+  ]
