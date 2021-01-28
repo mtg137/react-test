@@ -7,26 +7,6 @@ import api from './api/api';
 
 export default function App() {
   const [movies, setMovies] = useState([
-    {
-      id: 1,
-      title: 'abc',
-      watched: false,
-      content: {
-        year: 2008,
-        runtime: 137,
-        score: 6.9
-      }
-    },
-    {
-      id: 2,
-      title: 'def',
-      watched: true,
-    },
-    {
-      id: 3,
-      title: 'ghi',
-      watched: true,
-    }
   ]);
 
   const [tab, setTab] = useState(true);
